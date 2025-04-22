@@ -25,27 +25,6 @@
             <div class="card-header">
                 Masukan Absen Harian Anda
             </div>
-            <div class="card-body">
-                <?php
-                if ($error) {
-                ?>
-                    <div class="alert alert-danger" role="alert">
-                        <?php echo $error ?>
-                    </div>
-                <?php
-                    header("refresh:5;url=siswa.php");//5 : detik
-                }
-                ?>
-                <?php
-                if ($sukses) {
-                ?>
-                    <div class="alert alert-success" role="alert">
-                        <?php echo $sukses ?>
-                    </div>
-                <?php
-                    header("refresh:5;url=siswa.php");
-                }
-                ?>
                 <form action="" method="POST">
                     <div class="mb-3 row">
                         <label for="nim" class="col-sm-2 col-form-label">Nama</label>
